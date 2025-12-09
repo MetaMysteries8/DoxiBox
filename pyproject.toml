@@ -1,0 +1,29 @@
+[project]
+name = "doxibox"
+version = "0.1.0"
+description = "Lightweight scaffold for the Doxibox voice assistant"
+authors = [{ name = "OpenAI Assistant" }]
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+modal = ["modal"]
+audio = ["sounddevice>=0.4", "soundfile>=0.12", "numpy>=1.26"]
+tts = ["pyttsx3>=2.90"]
+asr = ["openai-whisper>=20231117", "ffmpeg-python>=0.2.0", "numpy>=1.26"]
+llm = ["openai>=1.30"]
+full = [
+    "sounddevice>=0.4",
+    "soundfile>=0.12",
+    "numpy>=1.26",
+    "pyttsx3>=2.90",
+    "openai-whisper>=20231117",
+    "ffmpeg-python>=0.2.0",
+    "openai>=1.30",
+    "modal",
+]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-q"
+testpaths = ["tests"]
