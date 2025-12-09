@@ -1758,6 +1758,8 @@ Key design wins:
 
 This project stands as both a powerful tool and an educational resource
 for understanding modern AI systems, speech processing, and full-stack
+
+(FINAL NOTE: It is reccomended to add MODAL to this list as a provider, we want to have as many providers for as many functions in this project to make doxibox into a full, high quality project.)
 application development.
 
 ================================================================================
